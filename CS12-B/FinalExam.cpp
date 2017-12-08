@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <vector>
 using namespace std;
 
 bool findNumber(int a[], int size, int key){
@@ -13,10 +13,11 @@ bool findNumber(int a[], int size, int key){
     return false;
 }
 
-int sortByOne(int statues[], int size){
+void sortByOne(int statues[], int size){
 	int min = statues[0];
 	int max = statues[0];
     int statuesNeeded=0;
+    vector<int> missingStatues;
     //Get min and max
     for(int i=0; i<size; i++){
         if(min >= statues[i]){
@@ -29,9 +30,19 @@ int sortByOne(int statues[], int size){
     for(int i=min; i<max; i++){
         if(!(findNumber(statues, 4, i))){
             statuesNeeded++;
+            missingStatues.push_back(i);
         }
     }
-	return statuesNeeded;
+    cout << statuesNeeded <<" statues needed" << endl;
+    if(statuesNeeded > 0){
+        cout << "Raymond needs statues: ";
+    }
+    for(int i=0; i < missingStatues.size(); i++){
+        if(i>0){
+            cout <<", ";
+        }
+        cout << missingStatues[i];
+    }
 }
 
 int main(){
@@ -45,7 +56,7 @@ int main(){
 		ctr++;
 	}
 
-    cout << "Statues needed: " << sortByOne(statues, 4);
+    sortByOne(statues, 4);
 
 	return 0;
 }
