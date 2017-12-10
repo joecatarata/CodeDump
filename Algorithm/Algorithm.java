@@ -19,7 +19,7 @@ public class Algorithm{
     public void showMenu(){
         System.out.println("MENU");
         System.out.println("[1] Flood Fill");
-        System.out.println("[2] A* Search");
+        //System.out.println("[2] A* Search");
         System.out.println("[0] Exit");
     }
     public void floodFill(int y, int x, char fill){
@@ -35,13 +35,17 @@ public class Algorithm{
             grid[y][x] = fill;
             if(y+1 < length)
                floodFill(y+1,x,fill);
-            if(x+1 < width)
-               floodFill(y,x+1,fill);
             if(y-1 >= 0)
                floodFill(y-1,x,fill);
+            if(x+1 < width)
+               floodFill(y,x+1,fill);
             if(x-1 >= 0)
                floodFill(y,x-1,fill);
         }
+    }
+
+    public void AStarSearch(){
+
     }
 
     public void initializeGrid(int m, int n){
@@ -79,5 +83,9 @@ public class Algorithm{
 
     public int getWidth(){
         return width;
+    }
+
+    public int getLength(){
+        return length;
     }
 }

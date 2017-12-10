@@ -24,9 +24,10 @@ public class Driver{
             switch(choice){
                 case 1: a.floodFill(0,0,'X');
                         break;
-                // case 1: a.floodFill(0,0,'X');
-                //         break;
+                case 2: //a.floodFill(0,0,'X');
+                        break;
             }
+            a.initializeGrid(a.getWidth(), a.getLength());
         }while(choice != 0);
     }
 }
