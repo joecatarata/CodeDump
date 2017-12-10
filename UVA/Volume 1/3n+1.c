@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <time.h>
 
 int algo(int lower, int upper){
     int ctr=1, max=0, i;
@@ -25,6 +26,7 @@ int algo(int lower, int upper){
 int main(){
     int n, m;
     scanf("%d%d", &n, &m);
-    printf("%d %d %d", n,m,algo(n, m));
+    int maxCycle = algo(n, m);
+    printf("%d %d %d", n,m,maxCycle);
 
 }
