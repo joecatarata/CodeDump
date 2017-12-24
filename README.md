@@ -1,3 +1,3 @@
 # CodeDump
 
-## Just dumping some code.
+## Repository for random code that I have made.
