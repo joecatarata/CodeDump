@@ -55,7 +55,7 @@ class Solver():
         evenString = self.convertAsciiToString(evenString)
         return evenString
 
-    def decryptChess(self, messageList, isBanner=None): #Game 3
+    def decryptChess(self, messageList, isBanner=False): #Game 3
         message = []
         for code in messageList:
             letter = code[0]
@@ -64,7 +64,7 @@ class Solver():
             message.append(letterList[number-1])
 
         #For banner
-        if isBanner is not None:
+        if isBanner is True:
             bannerMessage = []
             for letter in message:
                 bannerMessage.append(self.bannerKey[letter])
