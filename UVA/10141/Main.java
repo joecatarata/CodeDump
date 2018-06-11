@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -88,6 +86,3 @@ class Main{
 			System.out.println(highestCompliant + "\n");
 			case_ctr++;
 		}
-
-	}
-}
