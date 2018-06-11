@@ -17,9 +17,9 @@ class Main{
             numbers.add(number);
             Collections.sort(numbers);
             if(numbers.size() % 2 == 0){
-                int x = numbers.get(numbers.size()/2);
+                int x = (numbers.size()/2);
                 int y = x-1;
-                answer = (numbers.get(x)+numbers.get(y)) / 2;
+                answer = (numbers.get(x)+numbers.get(y))/2;
             }else{
                 int x = numbers.size()/2;
                 answer = numbers.get(x);
