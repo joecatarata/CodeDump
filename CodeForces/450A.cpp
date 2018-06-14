@@ -10,6 +10,7 @@ int main(){
 	cin >> n;
 	cin >> m;
 	int arr[n];
+	
 	for(int i=0; i<n; i++){
 		
 		cin >> arr[i];
