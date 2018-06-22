@@ -3,7 +3,7 @@
 #include <stack>
 
 using namespace std;
-
+//Glorified parenthesis balance
 void reverse(string s){
 
 	for(int i=s.length()-1; i>=0 ;i++){
