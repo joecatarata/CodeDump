@@ -1,0 +1,5 @@
+Twelve men are on a desert island, all with identical weights except for one of them, who is slightly lighter or heavier than the others.
+The only other thing on the island is a seesaw.
+There are no scales or means to measure weight otherwise.
+Can you determine which man has the different weight?
+You only get to use the seesaw three times.

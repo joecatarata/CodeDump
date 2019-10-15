@@ -1,0 +1,63 @@
+1/11 = 100 kg
+1/1 = lighter or heavier
+
+My take: 
+3 groups of 4 people total of 12
+
+
+Sample Scenario:
+each letter symbolizes a man
+
+x is the unique man, heavier
+1st seesaw use:
+	sample:
+		qwer
+		asdf
+		zxcv	
+	run: 
+		qwer vs asdf = all equal weight
+		unique man should be in group: zxcv
+2nd seesaw use: 
+	sample:
+		zx
+		cv
+	run: 
+		zx vs cv
+		zx 
+3rd seesaw use:
+	sample:
+		z
+		x
+	run: 
+		x since earlier zx is heavier
+
+but what if I pit qwer vs zxcv first?
+
+1st seesaw use:
+	sample:
+		qwer
+		asdf
+		zxcv
+	run: 
+		qwer vs zxcv 
+		unbalanced but where is the  unique man?
+2nd seesaw use: 
+	sample:
+		qw vs er
+		
+	run: 
+		
+3rd seesaw use:
+	sample:
+		
+	run: 
+		x since earlier zx is heavier
+Notes: 
+If at the 1st seesaw the balance is already unequal, then swap out a pair 
+from each group and put it in the other one.
+Problem:
+Twelve men are on a desert island, all with identical weights except for one of them, who is slightly lighter or heavier than the others.
+The only other thing on the island is a seesaw.
+There are no scales or means to measure weight otherwise.
+Can you determine which man has the different weight?
+You only get to use the seesaw three times.
