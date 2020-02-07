@@ -13,7 +13,13 @@ class Main{
 			int m = Integer.parseInt(numbs[0]);
 			int n = Integer.parseInt(numbs[1]);
 			int b = Integer.parseInt(numbs[2]); //budget in dollars
+			Map<String, Integer> ingredients = new TreeMap<>();
 			for(int j=0; j<m; j++){
+				String[] line = br.readLine().split(" ");
+				ingredients.put(line[0], Integer.parseInt(line[1]));
+			} // m lines
+
+			for(int j=0; j<n; j++){
 				
 			}
 			
